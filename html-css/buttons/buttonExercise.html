@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ButtonExercise</title>
+    <style>
+      .a {
+        padding: 5px;
+        margin: 5px;
+      }
+      #aa {
+        border: none;
+        margin: 5px;
+        text-decoration: underline;
+        color: blue;
+        background-color: white;
+      }
+      .stretch-button {
+        color: white;
+        background-color: green;
+        font-weight: bold;
+        padding: 10px;
+        border: none;
+        transition: padding 1s;
+        cursor: pointer;
+      }
+      .stretch-button:hover {
+        padding: 20px;
+      }
+      .exercise {
+        margin: 10px;
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 10px;
+        transition: margin 0.5s, padding 0.5s;
+      }
+      .exercise:hover {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="a">Back</button>
+    <a id="aa">1</a>
+    <a id="aa">2</a>
+    <a id="aa">3</a>
+    <a id="aa">4</a>
+    <a id="aa">5</a>
+    <button class="a">Next</button>
+    <br />
+    <button class="stretch-button">Stretch</button>
+    <br />
+
+    <button class="exercise">One</button>
+    <button class="exercise">Two</button>
+    <button class="exercise">Three</button>
+  </body>
+</html>
