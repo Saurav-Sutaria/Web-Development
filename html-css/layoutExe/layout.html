@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Layout Exercise</title>
+    <style>
+      p {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .profile{
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      .picture {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 40px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .profile-info {
+        display: inline-block;
+        vertical-align: top;
+        width:150px;
+      }
+      .name {
+        margin-bottom: 3px;
+        font-weight: bolder;
+        margin-top: 2px;
+      }
+      .category {
+        font-size: 15px;
+      }
+      .category,
+      .type {
+        color: rgb(96, 96, 96);
+      }
+      .type {
+        font-size: 12px;
+        margin-top: 1px;
+      }
+      .button {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 15px;
+
+      }
+      .follow-button {
+        background-color: rgba(0, 89, 255, 0.734);
+        color: white;
+        font-weight: bold;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile">
+      <img class="picture" src="cat.jpg" alt="profile" />
+      <div class="profile-info">
+        <p class="name">oliver</p>
+        <p class="category">the cat</p>
+        <p class="type">Popular</p>
+      </div>
+      <div class="button">
+        <button class="follow-button">Follow</button>
+      </div>
+    </div>
+    <div class="profile">
+      <img class="picture" src="cat2.jpg" alt="profile" />
+      <div class="profile-info">
+        <p class="name">Mimi</p>
+        <p class="category">Sleepy cat</p>
+        <p class="type">Popular</p>
+      </div>
+      <div class="button">
+        <button class="follow-button">Follow</button>
+      </div>
+    </div>
+    <div class="profile">
+      <img class="picture" src="dog.jpg" alt="profile" />
+      <div class="profile-info">
+        <p class="name">Rex</p>
+        <p class="category">Happy Bulldog</p>
+        <p class="type">Popular</p>
+      </div>
+      <div class="button">
+        <button class="follow-button">Follow</button>
+      </div>
+    </div>
+  </body>
+</html>
