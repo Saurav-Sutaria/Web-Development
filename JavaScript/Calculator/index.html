@@ -6,37 +6,38 @@
 </head>
 <body>
     <div class="main">
-        <div class="screen">0</div>
+        <div class="screen"></div>
         <div class="keys">
             <div class="row1">
-                <button class="operation">CE</button>
-                <button class="operation">+</button>
-                <button class="operation">-</button>
-                <button class="operation">%</button>
+                <button class="numbers" id="0" onclick="push(0)">0</button>
+                <button class="operation" onclick="clearScreen()">CE</button>
+                <button class="operation" onclick="pushOp('+')">+</button>
+                <button class="operation" onclick="pushOp('-')">-</button>
+                <button class="operation" onclick="pushOp('%')">%</button>
             </div>
             <div class="row2">
-                <button class="numbers" onclick="push()">1</button>
-                <button class="numbers" onclick="push(2)">2</button>
-                <button class="numbers" onclick="push(3)">3</button>
-                <button class="operation">x</button>
+                <button class="numbers" id="1" onclick="push(1)">1</button>
+                <button class="numbers" id="2" onclick="push(2)">2</button>
+                <button class="numbers" id="3" onclick="push(3)">3</button>
+                <button class="operation" onclick="pushOp('*')">x</button>
 
             </div>
             <div class="row3">
-                <button class="numbers" onclick="push(4)">4</button>
-                <button class="numbers" onclick="push(5)">5</button>
-                <button class="numbers" onclick="push(6)">6</button>
-                <button class="operation">/</button>
+                <button class="numbers" id="4" onclick="push(4)">4</button>
+                <button class="numbers" id="5" onclick="push(5)">5</button>
+                <button class="numbers" id="6" onclick="push(6)">6</button>
+                <button class="operation" onclick="pushOp('/')">/</button>
 
             </div>
             <div class="row4">
-                <button class="numbers" onclick="push(7)">7</button>
-                <button class="numbers" onclick="push(8)">8</button>
-                <button class="numbers" onclick="push(9)">9</button>
-                <button class="operation">=</button>
+                <button class="numbers" id="7" onclick="push(7)">7</button>
+                <button class="numbers" id="8" onclick="push(8)">8</button>
+                <button class="numbers" id="9" onclick="push(9)">9</button>
+                <button class="operation" onclick="findAnswer()">=</button>
 
             </div>
         </div>
     </div>
-    <script href="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
